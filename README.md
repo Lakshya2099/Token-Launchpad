@@ -1,7 +1,3 @@
-Here's a README template tailored for your **Token-Launchpad** project, which aligns with your blockchain and development interests:
-
----
-
 # Token Launchpad
 
 ## Overview
@@ -82,7 +78,3 @@ Token Launchpad is a decentralized platform aimed at empowering creators and pro
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-Let me know if you’d like additional details or sections for specific functionalities!
