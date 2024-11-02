@@ -15,23 +15,8 @@ Token Launchpad is a decentralized platform aimed at empowering creators and pro
 ## Tech Stack
 
 - **Frontend**: React, CSS, JavaScript
-- **Backend**: Node.js, Express
-- **Blockchain**: Solidity, Ethereum, Hardhat
-- **Database**: MongoDB
+- **Backend**: Node.js, Expres
 
-## Folder Structure
-
-- `frontend/` - Contains the user interface code.
-- `backend/` - Manages server-side logic.
-- `contracts/` - Includes Solidity smart contracts for token management.
-- `scripts/` - Scripts for deployment and testing of contracts.
-
-## Prerequisites
-
-- Node.js and npm
-- Hardhat (for smart contract deployment)
-- MetaMask (for interacting with the blockchain)
-- Ethereum test network (such as Ropsten or Ganache)
 
 ## Installation
 
@@ -46,28 +31,13 @@ Token Launchpad is a decentralized platform aimed at empowering creators and pro
    npm install
    ```
 
-3. **Set up environment variables** (such as API keys and network configuration) in a `.env` file.
-
 ## Usage
 
-1. **Start the backend server**:
+1. **Start the server**:
    ```bash
-   cd backend
-   npm start
+   npm run dev
    ```
 
-2. **Launch the frontend**:
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-3. **Deploy smart contracts**:
-   ```bash
-   npx hardhat run scripts/deploy.js --network [network_name]
-   ```
-
-4. **Interact with MetaMask**: Connect MetaMask to the specified network and start using the platform.
 
 ## Future Scope
 
