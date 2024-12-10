@@ -1,15 +1,144 @@
-#root {
-  margin: 0 auto;
-  text-align: center;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.inputText {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  width: 300px;
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e293b, #64748b);
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn {
+/* App Container */
+div[style*="width: 100vw"] {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wallet Button Styling */
+.wallet-adapter-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #14b8a6, #0f766e);
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.wallet-adapter-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(20, 184, 166, 0.4);
+}
+
+/* Disconnect Button Styling */
+.wallet-adapter-button[aria-label="Disconnect"] {
+  background: linear-gradient(135deg, #f87171, #991b1b);
+}
+
+.wallet-adapter-button[aria-label="Disconnect"]:hover {
+  box-shadow: 0 4px 10px rgba(248, 113, 113, 0.4);
+}
+
+/* Header Styling */
+div[style*="justify-content: space-between"] {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Token Launchpad Component Styling */
+.token-launchpad {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   padding: 20px;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.token-launchpad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 5px rgba(20, 184, 166, 0.5);
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(34, 197, 94, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  div[style*="justify-content: space-between"] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wallet-adapter-button {
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    max-width: 100%;
+  }
 }
